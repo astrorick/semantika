@@ -1,4 +1,4 @@
-// Semantika is a Go package that provides a simple implementation of semantic versioning in Go.
+// Semantika is a Go package that provides a simple but strict implementation of semantic versioning in Go.
 package semantika
 
 import (
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// Version struct that will store the separate version numbers.
+// Version stores version numbers, pre-release metadata and build metadata.
 type Version struct {
 	Major uint64
 	Minor uint64
